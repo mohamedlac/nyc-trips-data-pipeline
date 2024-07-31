@@ -1,0 +1,8 @@
+version: '3'
+
+tasks:
+
+  lambda:layer:create:
+    desc: "Create a Lambda layer artifact."
+    cmds:
+      - ./src/scripts/create_lambda_layer_artifact.sh {{.root_path}} {{.artifact_file_name}}
